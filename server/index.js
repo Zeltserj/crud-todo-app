@@ -3,7 +3,6 @@ const mongoose = require('mongoose')
 const cors = require('cors')
 const app = express()
 const ToDoModel = require('./models/ToDo');
-const { update } = require('./models/ToDo');
 const port = 3001
 app.use(express.json())
 app.use(cors());
@@ -78,7 +77,7 @@ app.put('/delete', async (req, res) => {
   }
 )
 app.get('/', (req, res) => {
-  res.send(`<h1>API Works Dickman mediocre kaman !!!</h1>`)
+  res.send(`<h1>API Works!!!</h1>`)
 });
 
 
